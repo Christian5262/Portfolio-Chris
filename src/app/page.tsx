@@ -22,7 +22,6 @@ export default function Home() {
         <AboutSection />
         <SkillsSection />
         <ProjectsSection />
-        <ContactSection />
         <Footer />
       </main>
     </div>
