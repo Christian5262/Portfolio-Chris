@@ -63,7 +63,7 @@ function ContactSection() {
                     <button className="bg-slate-950 rounded-lg p-2"> Enviar </button>
                 </form>
             </section>
-        );
+        )
     }
 }
 
