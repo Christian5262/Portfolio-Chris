@@ -1,6 +1,5 @@
-"use client"
 import { useState } from "react";
-import { FormEvent, } from "react";
+
 function ContactSection() {
 
 
@@ -10,7 +9,7 @@ function ContactSection() {
         affair: "",
         message: ""
     })
-    const handleChange = (event: React.ChangeEvent<HTMLTextAreaElement>) => {
+    const handleChange = (event: any) => {
         const value = event.target.value
 
         setInput({
@@ -19,7 +18,7 @@ function ContactSection() {
         })
     }
 
-    const handleSubmit = async (event: FormEvent) => {
+    const handleSubmit = async (event: any) => {
         event?.preventDefault()
         try {
             const response = await fetch("/api/route", {
@@ -50,7 +49,7 @@ function ContactSection() {
                 </div>
                 <form onSubmit={handleSubmit} className="flex flex-col justify-center items-center gap-5">
                     <div>
-                        <input placeholder="Nombre completo" name="name" type="text" value={input.name} onChange={event => handleChange(event) } />
+                        <input placeholder="Nombre completo" name="name" type="text" value={input.name} onChange={handleChange} />
                     </div>
                     <div>
                         <input placeholder="Email" type="text" name="email" value={input.email} onChange={handleChange} />
@@ -67,4 +66,5 @@ function ContactSection() {
         );
     }
 }
+
 export default ContactSection;
