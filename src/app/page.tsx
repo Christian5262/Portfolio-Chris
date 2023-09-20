@@ -2,6 +2,11 @@
 import Image from 'next/image'
 import { useState, useEffect, createContext } from 'react'
 import HomeSection from "./components/HomeSection"
+import AboutSection from './components/AboutSection'
+import SkillsSection from './components/SkillsSection'
+import ProjectsSection from './components/ProjectsSection'
+import ContactSection from './components/ContactSection'
+import Footer from './components/Footer'
 
 export default function Home() {
   // const [isClient, setIsClient] = useState(false)
@@ -12,8 +17,13 @@ export default function Home() {
 
   return (
     <div>
-      <main className='mx-auto max-w-3xl px-4 '>
+      <main>
         <HomeSection />
+        <AboutSection />
+        <SkillsSection />
+        <ProjectsSection />
+        <ContactSection />
+        <Footer />
       </main>
     </div>
   )

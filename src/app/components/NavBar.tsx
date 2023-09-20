@@ -41,7 +41,7 @@ const NavBar = () => {
     const [navBar, setNavBar] = useState(false)
     const Context = createContext(1)
     return (
-        <header className="w-full h-14 flex-shrink-0  mx-auto px-8 bg-blue-500 shadow-md fixed  bg-center z-50 dark:bg-blue-900">
+        <header className="w-full h-14 flex-shrink-0  mx-auto px-8 bg-blue-500 shadow-md fixed  bg-center z-50 dark:bg-blue-950">
             <div className='justify-between  md:items-center md:flex h-14 '>
                 <div>
                     <div>
