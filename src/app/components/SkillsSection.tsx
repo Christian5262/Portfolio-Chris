@@ -19,14 +19,15 @@ function SkillsSection() {
 
 
     return (
-        <section id="skills" className="bg-blue-900 h-screen w-screen">
+        <section id="skills" className="bg-blue-900 min-h-screen min-w-screen">
             <div className="text-center">Habilidades</div>
-            <div className="grid grid-cols-4 gap-4 place-items-center" >
+            <div className="flex flex-col justify-center items-center  md:grid md:grid-cols-4 md:gap-4 md:place-items-center" >
                 {skills.map((item, index) => {
                     return (
-                        <div key={index} className="bg-blue-950 p-8 m-2 rounded-full " >
-                            <Image loader={() => item.image} src={item.image} alt="foto" width={80} height={80} className="justify-center" />
-                            <h3 className="text-center">{item.skill}</h3>
+                        <div key={index} className=" rounded-xl cursor-pointer transform transition duration-500 hover:scale-110 flex flex-col gap-5 m-6 justify-center items-center bg-blue-950  h-44 w-40 shadow-2xl  " >
+                            {/* El loader sirve para poder renderizar las imagenes, por alguna razón funcionaba mal */}
+                            <Image loader={() => item.image} src={item.image} alt="foto" width={70} height={70} className="flex items-center justify-center" />
+                            <h3 className="text-center font-bold text-emerald-400">{item.skill}</h3>
                         </div>
                     )
                 })}

@@ -33,6 +33,14 @@ const NAV_ITEMS: Array<NavItem> = [{
 
 ]
 
+//*Codigo de como se hace el hover para los items de la Navbar
+// {/* fourth hover effect */}
+// <p className="m-16 relative group">
+//   <span>Hover over me</span>
+//   <span className="absolute left-0 -bottom-1 w-full h-2 bg-blue-400 -z-10 group-hover:h-full group-hover:transition-all"></span>
+// </p>
+
+
 
 
 const NavBar = () => {

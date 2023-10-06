@@ -17,7 +17,7 @@ export default function Home() {
 
   return (
     <div>
-      <main>
+      <main className='overflow-hidden'>
         <HomeSection />
         <AboutSection />
         <SkillsSection />

@@ -4,9 +4,18 @@ const nextConfig = {
         appDir: true
     },
     images: {
-        domains: ['localhost'],
+        domains: ['imgur.com'],
+        remotePatterns: [
+            {
+                protocol: 'https',
+                hostname: 'imgur.com',
+                port: '',
+                pathname: 'https://imgur.com/a/vj2U8yK',
+            },
+        ],
     },
 }
+
 
 
 module.exports = nextConfig

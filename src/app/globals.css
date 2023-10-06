@@ -1,7 +1,7 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
-.js {
-    clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
-}
+.my-custom-bg-class{
+    background-image: url(https://placekitten.com/1400);
+  }
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swaphttps://fonts.google.com/specimen/Cabin");
