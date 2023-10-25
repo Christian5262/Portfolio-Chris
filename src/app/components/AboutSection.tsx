@@ -1,12 +1,13 @@
 import Image from "next/image";
 import Photo from "../../../public/1690153547052-removebg-preview (2).png"
+import { Link } from "react-scroll";
 
 function AboutSection() {
     return (
         <section id="about" className="min-h-screen min-w-screen bg-gradient-to-l from-blue-800 to-blue-950">
-                <div className=" text-center font-fjalla text-5xl font-extrabold opacity-40 text-yellow-400 mb-3">
-                    <h1>Sobre mí</h1>
-                </div>
+            <div className=" text-center font-fjalla text-5xl font-extrabold opacity-40 text-yellow-400 mb-3">
+                <h1>Sobre mí</h1>
+            </div>
             <div className="flex flex-col  relative m-0 p-9 md:grid md:grid-flow-col ">
 
                 <div className="flex relative  border-8  border-y-emerald-700 border-x-emerald-950 md:w-4/5">
@@ -26,10 +27,12 @@ function AboutSection() {
                     <p>
                         Si quieres saber mas de mí, ¡no dudes en contactarme!
                     </p>
-                    <button className="flex flex-wrap items-center justify-center group relative h-8 border-solid w-48 overflow-hidden rounded-lg bg-blue-800 text-lg shadow-2xl outline-blue-600 opacity-100 my-3">
-                        <div className="absolute inset-0 w-3 bg-blue-600 transition-all duration-[250ms] ease-out group-hover:w-full"></div>
-                        <span className="relative text-black group-hover:text-gray-300/100">Contactar</span>
-                    </button>
+                    <Link to="contact">
+                        <button className="flex flex-wrap items-center justify-center group relative h-8 border-solid w-48 overflow-hidden rounded-lg bg-blue-800 text-lg shadow-2xl outline-blue-600 opacity-100 my-3">
+                            <div className="absolute inset-0 w-3 bg-blue-600 transition-all duration-[250ms] ease-out group-hover:w-full"></div>
+                            <span className="relative text-black group-hover:text-gray-300/100">Contactar</span>
+                        </button>
+                    </Link>
                 </div>
             </div>
         </section>

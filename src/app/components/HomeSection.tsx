@@ -103,7 +103,7 @@ const HomeSection = () => {
                     <a target="_blanck" href="https://docdro.id/UAmImzW">
                         <button className="group relative h-8 border-solid w-48 overflow-hidden rounded-lg bg-blue-800 text-lg shadow-2xl outline-blue-600 opacity-100 ">
                             <div className="absolute inset-0 w-3 bg-blue-600 transition-all duration-[250ms] ease-out group-hover:w-full"></div>
-                            <span className="relative text-black group-hover:text-gray-300/100">Descargar CV</span>
+                            <span className="relative text-black group-hover:text-gray-300/100">Ver CV</span>
                         </button>
                     </a>
                 </div>
