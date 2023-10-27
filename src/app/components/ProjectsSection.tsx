@@ -81,7 +81,7 @@ function ProjectsSection() {
                 image: "https://user-images.githubusercontent.com/25181517/183898674-75a4a1b1-f960-4ea9-abcb-637170a00a75.png",
             },],
             deploy: "https://vercelApp.com",
-            github: "Christian 5262",
+            github: "https://github.com/Christian5262/PI_Pokemon",
             info: "Diseño de aplicación web orientada a citas de usuarios clientes y profesionales, como profesional podrá crear publicaciones de sus trabajos y el cliente podrá ordenar, buscar y ver a los mejores profesionales puntuados en la app. En el lado del cliente se utilizaron las tecnologías de React, Redux, Zustand, Chakra UI, y del servidor Express, NodeJs, PostgreSQL y como ORM Sequelize."
         }
     ]
